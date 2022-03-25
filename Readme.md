@@ -8,7 +8,7 @@ Default will take the latest release
 
 ```hcl
 module "minecraft_version" {
-  source = "https://github.com/ALibrada/terraform-minecraft-version.git"
+  source = "github.com/ALibrada/terraform-minecraft-version.git?ref=main"
   }
 }
 ```
@@ -17,8 +17,8 @@ You can specify the version
 
 ```hcl
 module "minecraft_version" {
-  source = "https://github.com/ALibrada/terraform-minecraft-version.git"
-  version = "1.18.1"
+  source = "github.com/ALibrada/terraform-minecraft-version.git?ref=main"
+  minecraft_version = "1.18.1"
   }
 }
 ```
